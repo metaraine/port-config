@@ -1,6 +1,6 @@
 {
   "name": "port-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Look for a configured port from a few typical locations.",
   "license": "ISC",
   "repository": "metaraine/port-config",
