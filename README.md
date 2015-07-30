@@ -1,9 +1,7 @@
 # port-config
 [![npm version](https://img.shields.io/npm/v/port-config.svg)](https://npmjs.org/package/port-config) 
-[![waffle.io issues](https://badge.waffle.io/metaraine/port-config.png?label=ready&title=waffle.io)](https://waffle.io/metaraine/port-config) 
-[![Build Status](https://travis-ci.org/metaraine/port-config.svg?branch=master)](https://travis-ci.org/metaraine/port-config)
 
-> Look for a configured port from a few typical locations.'
+> Get port number from various possible config locations.
 
 
 ## Install
@@ -15,7 +13,21 @@ $ npm install --save port-config
 
 ## Usage
 
+Looks for a port number defined in these locations:
+
+1. process.env.PORT (such as used on Heroku)
+2. process.env.npm_package_config_port (if set in your package.json under config.port)
+3. passed argument
+4. 3000
+
+
 ```js
+var portConfig = require('port-config')
+
+// express app
+app.listen(portConfig(), function() {
+  console.log('Express server listening on port ' + portConfig())
+}
 ```
 
 
