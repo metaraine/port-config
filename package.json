@@ -1,7 +1,7 @@
 {
   "name": "port-config",
   "version": "0.1.0",
-  "description": "Look for a configured port from a few typical locations.",
+  "description": "Get port number from various possible config locations.",
   "license": "ISC",
   "repository": "metaraine/port-config",
   "author": {
@@ -12,11 +12,9 @@
     "node": "0.12.x",
     "npm": "^2.9.0"
   },
-  "scripts": {
-    "test": "mocha --compilers coffee:coffee-script/register"
-  },
   "keywords": [
-    "port"
+    "port",
+    "config"
   ],
   "devDependencies": {
     "chai": "~1.10.0",
