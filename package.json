@@ -1,0 +1,25 @@
+{
+  "name": "port-config",
+  "version": "0.0.0",
+  "description": "Look for a configured port from a few typical locations.",
+  "license": "ISC",
+  "repository": "metaraine/port-config",
+  "author": {
+    "name": "Raine Lourie",
+    "url": "https://github.com/metaraine"
+  },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "^2.9.0"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register"
+  },
+  "keywords": [
+    "port"
+  ],
+  "devDependencies": {
+    "chai": "~1.10.0",
+    "mocha": "~2.1.0"
+  }
+}
